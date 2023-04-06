@@ -1,0 +1,23 @@
+
+ <div class="loader">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+</div> 
+<app-header *ngIf="home==true"></app-header>
+<app-header2 *ngIf="home==false"></app-header2>
+<div style="min-height: 500px;">
+    <router-outlet></router-outlet>
+
+</div>
+
+
+<app-footer></app-footer>
